@@ -1,0 +1,21 @@
+<mvc:View controllerName="test.Test.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<List items="{/links}" headerText="Links">
+							<items>
+								<ObjectListItem title="{Title}" type="Active">
+									<firstStatus>
+										<ObjectStatus text="{TagName} : {TagNumber}"/>
+									</firstStatus>
+								</ObjectListItem>
+							</items>
+						</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
